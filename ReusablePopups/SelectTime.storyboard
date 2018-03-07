@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlv-NG-vIx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Time-->
+        <scene sceneID="ylm-SR-wta">
+            <objects>
+                <viewController id="wlv-NG-vIx" customClass="SelectTimeViewController" customModule="ReusablePopups" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gHA-wf-Ekz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqY-T2-L3w">
+                                <rect key="frame" x="229" y="36" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Ojn-af-TUG"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zua-36-Ogl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Select Time"/>
+                                <connections>
+                                    <action selector="selectTimeButtonTapped:" destination="wlv-NG-vIx" eventType="touchUpInside" id="uJt-JA-TGJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2P-CC-MYt">
+                                <rect key="frame" x="16" y="36" width="109" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Ubs-Y7-fde"/>
+                                    <constraint firstAttribute="height" constant="39" id="f0s-Qc-bva"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f2P-CC-MYt" firstAttribute="leading" secondItem="ZR4-4j-7zJ" secondAttribute="leading" constant="16" id="Ibs-Xo-pbu"/>
+                            <constraint firstItem="uqY-T2-L3w" firstAttribute="top" secondItem="ZR4-4j-7zJ" secondAttribute="top" constant="16" id="Mt9-dD-2hd"/>
+                            <constraint firstItem="f2P-CC-MYt" firstAttribute="top" secondItem="ZR4-4j-7zJ" secondAttribute="top" constant="16" id="Upg-K2-m0r"/>
+                            <constraint firstItem="ZR4-4j-7zJ" firstAttribute="trailing" secondItem="uqY-T2-L3w" secondAttribute="trailing" constant="16" id="ql0-zb-4jR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZR4-4j-7zJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Select Time" id="bXj-8x-Srg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="f2P-CC-MYt" id="8Um-fv-NJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a02-M5-7du" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111.2" y="187.55622188905548"/>
+        </scene>
+    </scenes>
+</document>
